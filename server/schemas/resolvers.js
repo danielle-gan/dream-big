@@ -64,7 +64,26 @@ const resolvers = {
                 return updatedUser
             }
             throw new AuthenticationError('You need to be logged in!')
-        }
+        },
+        updateUser: async (parent, args, context) => {
+            if (context.user) {
+              return await User.findByIdAndUpdate(context.user._id, args, { new: true });
+            }
+      
+            throw new AuthenticationError('Not logged in');
+        },
+        updateTask: async (parent, {id}, context) => {
+            if (context.user) {
+              const updatedUser = await User
+              .findOneAndUpdate(
+                {_id: context.user._id},
+                { $pull: {routine: {id}}},
+                { new: true }
+              )
+              return updatedUser
+            }
+            throw new AuthenticationError('Not logged in');
+          }
     }
 }
 

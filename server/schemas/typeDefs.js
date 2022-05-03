@@ -25,12 +25,14 @@ type Query {
 type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
+    updateUser(username: String!, email: String!, password: String!): User
     saveTask(taskId: ID, 
         startTime: String,
         endTime: String,
         date: String,
-        title: String!
+        title: String!): User
     removeTask(taskId: ID!): User
+    updateTask(taskId: ID!): User
 }
 
 type Auth {

@@ -11,7 +11,7 @@ mutation login($email: String!, $password: String!) {
       }
     }
   }
-`
+`;
 
 export const ADD_USER = gql`
 mutation addUser($username: String!, $email: String!, $password: String!) {
@@ -24,4 +24,47 @@ mutation addUser($username: String!, $email: String!, $password: String!) {
     }
   }
 }
-`
+`;
+
+export const SAVE_BOOK = gql `
+mutation saveBook($taskId: ID, 
+                $startTime: String, 
+                $endTime: String, 
+                $title: String, 
+                $date: String){
+    saveTask(taskId: $taskId, 
+            startTime: $startTime, 
+            endTime: $endTime, 
+            title: $title, 
+            date: $date){
+        username
+        email
+          _id
+        savedTasks {
+          taskId
+          startTime
+          endTime
+          title
+          date
+      }
+    }
+  }
+`;
+
+export const REMOVE_TASK = gql `
+mutation removeTask($taskId: ID!){
+    removeTask(taskId: $taskId){
+        username
+        email
+        _id
+        savedTasks{
+          taskId
+          startTime
+          endTime
+          title
+          date
+        }
+    }
+  }
+`;
+

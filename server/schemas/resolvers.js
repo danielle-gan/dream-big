@@ -46,7 +46,7 @@ const resolvers = {
                 const updatedUser = await User
                     .findOneAndUpdate(
                         { _id: context.user._id },
-                        { $addToSet: { savedBooks: { taskId, date, startTime, endTime, title } } },
+                        { $addToSet: { savedTasks: { taskId, date, startTime, endTime, title } } },
                         { new: true }
                     );
 

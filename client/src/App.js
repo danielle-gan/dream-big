@@ -1,9 +1,9 @@
 import React from 'react';
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
 import Home from './pages/Home';
-import Schedule from './pages/Schedule';
+// import Schedule from './pages/Schedule';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 
@@ -31,10 +31,10 @@ function App() {
         <ApolloProvider client={client}>
             <Router>
                 <Navigation />
-                <Switch>
-                    <Route exact path='/' component= {Home} />
+                <Routes>
+                    <Route exact path='/' element= {<Home/>} />
                     {/* <Route exact path='/schedule' component={Schedule} /> */}
-                </Switch>
+                </Routes>
                 <Footer />
             </Router>
         </ApolloProvider>

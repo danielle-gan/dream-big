@@ -13,19 +13,19 @@ const Home = () => {
     // useState
     // const [data, setData] = useState();
 
-    useEffect( () => {
-        // async function apiCall() {
-        //     const response = await fetch("<url>");
-        //     const result = await response.json();
+    // useEffect( () => {
+    //     // async function apiCall() {
+    //     //     const response = await fetch("<url>");
+    //     //     const result = await response.json();
 
-        //     // using useState - set the state with the data you want. 
-        //     // setData();
-        // }
+    //     //     // using useState - set the state with the data you want. 
+    //     //     // setData();
+    //     // }
         
-        // apiCall()
-       console.log(upcomingHolidays());
+    //     // apiCall()
+    //    console.log(upcomingHolidays());
         
-    }, [])
+    // }, [])
 
     return (
         <div>

@@ -26,6 +26,7 @@ const SignupForm = () => {
       }
   
       try {
+        console.log(userFormData)
         const response = await userAdd({
           variables: {  username: userFormData.username,
                         email: userFormData.email,

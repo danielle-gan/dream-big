@@ -24,7 +24,7 @@ const Navigation = () => {
                 <Nav className="ml-auto">
                     {Auth.loggedIn() ? (
                     <>
-                    <Nav.Link as={Link} to='/profile'>Profile</Nav.Link>
+                    <Nav.Link as={Link} to='/profile'>My Schedule</Nav.Link>
                     <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
                     </>
                     ) : (

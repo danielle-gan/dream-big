@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import {Container, Nav, Navbar, Modal, Tab} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import LoginForm from '../LoginForm/index'
-import SignupForm from '../SignupForm/index'
-import Auth from '../../utils/auth';
+import LoginForm from './LoginForm'
+import SignupForm from './SignupForm'
+import Auth from '../utils/auth'
 
 const Navigation = () => {
 

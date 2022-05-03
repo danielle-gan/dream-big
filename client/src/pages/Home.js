@@ -7,15 +7,31 @@ import { Jumbotron, Container, Col, Form, Button, Card, CardColumns } from 'reac
 import { useMutation } from '@apollo/client';
 // import { SAVE_TASK } from '../utils/mutations'
 
-
+import { upcomingHolidays } from '../utils/API'; 
 // sign in to view schedule?
 const Home = () => {
+    // useState
+    // const [data, setData] = useState();
+
+    useEffect( () => {
+        // async function apiCall() {
+        //     const response = await fetch("<url>");
+        //     const result = await response.json();
+
+        //     // using useState - set the state with the data you want. 
+        //     // setData();
+        // }
+        
+        // apiCall()
+       console.log(upcomingHolidays());
+        
+    }, [])
 
     return (
         <div>
             <p>Hi</p>
         </div>
     )
-    
+
 }
 export default Home

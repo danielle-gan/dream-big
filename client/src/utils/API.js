@@ -1,6 +1,6 @@
 import { HolidayAPI } from 'holidayapi';
 
-const key = 'Insert your API key here';
+const key = 'c79bf8a0-046f-41a8-adca-ad46a2de975c';
 const holidayApi = new HolidayAPI({ key });
 
 export const upcomingHolidays = () => {

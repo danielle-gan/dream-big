@@ -32,8 +32,8 @@ function App() {
             <Router>
                 <Navigation />
                 <Switch>
-                    <Route exact path='/' component={Home} />
-                    <Route exact path='/schedule' component={Schedule} />
+                    <Route exact path='/' component= {Home} />
+                    {/* <Route exact path='/schedule' component={Schedule} /> */}
                 </Switch>
                 <Footer />
             </Router>

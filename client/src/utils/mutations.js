@@ -68,3 +68,20 @@ mutation removeTask($taskId: ID!){
   }
 `;
 
+// I don't know about this one y'all
+export const UPDATE_TASK = gql `
+mutation updateTask($taskId: ID){
+  updateTask(taskId: $taskId){
+      username
+      email
+      _id
+      savedTasks{
+        taskId
+        startTime
+        endTime
+        title
+        date
+    }
+  }
+}
+`

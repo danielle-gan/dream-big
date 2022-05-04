@@ -10,14 +10,32 @@ import {
   Card,
   CardColumns,
 } from "react-bootstrap";
+
+import Navigation from "../components/Navigation";
+
 // import Auth from '../utils/auth';
+import Auth from "../utils/auth";
+
 // import { upcomingHolidays } from '../utils/API';
 import { useMutation } from "@apollo/client";
 // import { SAVE_TASK } from '../utils/mutations'
 
 import { upcomingHolidays } from "../utils/API";
 // sign in to view schedule?
+
 const Home = () => {
+    const [data, setData] = useState();
+//query changes, make API call
+useEffect(() => {
+  async function fetchData(){
+    const response = await fetch("<url>");
+    setData(response.data);
+  }
+  fetchData();
+},
+return [data] as 
+export default Home;
+
   // useState
   // const [data, setData] = useState();
 
@@ -35,10 +53,10 @@ const Home = () => {
 
   // }, [])
 
-  return (
+  /*return (
     <div>
       <p>Hi</p>
     </div>
   );
 };
-export default Home;
+*/

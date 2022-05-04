@@ -1,7 +1,5 @@
 # dream-big
 
-# dream-small
-
 ## Table of Contents
 
 - [Description](#description)

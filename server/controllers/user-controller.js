@@ -1,4 +1,4 @@
-const { User, Task } = require("../models");
+const { User } = require("../models");
 
 const { signToken } = require("../utils/auth");
 
@@ -47,12 +47,12 @@ module.exports = {
     res.json({ token, user });
   },
 
-  async saveBook({ user, body }, res) {
+  async saveUser({ user, body }, res) {
     console.log(user);
     try {
       const updatedUser = await User.findOneAndUpdate(
         { _id: user._id },
-        { $addToSet: { savedBooks: body } },
+        { $addToSet: { savedUser: body } },
         { new: true, runValidators: true }
       );
       return res.json(updatedUser);
@@ -62,10 +62,10 @@ module.exports = {
     }
   },
 
-  async deleteBook({ user, params }, res) {
+  async deleteUser({ user, params }, res) {
     const updatedUser = await User.findOneAndUpdate(
       { _id: user._id },
-      { $pull: { savedBooks: { bookId: params.bookId } } },
+      { $pull: { savedUser: { userId: params.userId } } },
       { new: true }
     );
     if (!updatedUser) {

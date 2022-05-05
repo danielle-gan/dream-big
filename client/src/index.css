@@ -1,6 +1,6 @@
 :root {
-    --primary: #497573;
-    --secondary: #99f7f2;
+    --primary: #0b57a8;
+    --secondary: #47b8d6;
     --tertiary: #b2c2c1;
     --quatrinary: #cadbda;
     --light: #e1f5f4;
@@ -44,6 +44,49 @@
     font-weight: 700;
     margin: 5px 0;
     line-height: 1.25;
+  }
+  
+  .navbar .container-fluid .navbar-brand{
+    display: flex;
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    background: var(--primary);
+    justify-content: center;
+  }
+  
+  .navbar .container-fluid .navbar-nav .nav-link{
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    background: var(--primary);
+    font-style: italic;
+    justify-content: center;
+  }
+
+  .hero {
+    background-image: url(https://cdn.pixabay.com/photo/2015/09/21/14/48/banner-949946_960_720.jpg);
+    background-size:cover;
+    background-position: center;
+    height: 250px;
+    justify-content: space-between;
+  }
+
+  .home-box {
+    background-color: var(--primary);
+    height: 600px;
+    align-items: center;
+    color: white;
+  }
+
+  .home-box p {
+    margin-left: 28%;
+  }
+
+  .home-img {
+    height: 250px;
+    margin-left: 36%;
+    margin-top: 90px;
   }
   
   h1 {
@@ -242,7 +285,7 @@
   }
   
   .container-fluid {
-    width: 92%;
+    width: 100%;
   }
   
   /* DISPLAY */

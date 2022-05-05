@@ -16,7 +16,7 @@ const Navigation = () => {
             <Navbar.Brand as={Link} to="/">
               Admin Scheduler
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbar" />
+            {/* <Navbar.Toggle aria-controls="navbar" /> */}
             <Navbar.Collapse id="navbar">
               <Nav className="ml-auto">
                 {Auth.loggedIn() ? (

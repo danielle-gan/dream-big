@@ -27,17 +27,17 @@ const Schedule = () => {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
+        Add an Event
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Enter Your Event in the Box Below!</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email address</Form.Label>
+              <Form.Label>Email address of Additional Colleagues</Form.Label>
               <Form.Control
                 type="email"
                 placeholder="name@example.com"
@@ -48,7 +48,7 @@ const Schedule = () => {
               className="mb-3"
               controlId="exampleForm.ControlTextarea1"
             >
-              <Form.Label>Example textarea</Form.Label>
+              <Form.Label>Event Title / Description</Form.Label>
               <Form.Control as="textarea" rows={3} />
             </Form.Group>
           </Form>

@@ -9,7 +9,7 @@ import { setContext } from "@apollo/client/link/context";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 
-// import Schedule from './pages/Schedule';
+import Schedule from './pages/Schedule-1';
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 
@@ -39,7 +39,7 @@ function App() {
         <Navigation />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          {/* <Route exact path='/schedule' component={Schedule} /> */}
+          <Route exact path='/schedule' component={<Schedule />} />
         </Routes>
         <Footer />
       </Router>

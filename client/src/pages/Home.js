@@ -24,16 +24,20 @@ import { upcomingHolidays } from "../utils/API";
 // sign in to view schedule?
 
 const Home = () => {
-    const [data, setData] = useState();
-//query changes, make API call
-useEffect(() => {
-  async function fetchData(){
-    const response = await fetch("<url>");
-    setData(response.data);
-  }
-  fetchData();
-},
-return [data] as 
+  //     const [data, setData] = useState();
+  // //query changes, make API call
+  // useEffect(() => {
+  //   async function fetchData(){
+  //     const response = await fetch("<url>");
+  //     setData(response.data);
+  //   }
+  //   fetchData();
+
+  return (
+    // [data]
+    < div > HI </div >
+  )
+}
 export default Home;
 
   // useState
@@ -53,10 +57,10 @@ export default Home;
 
   // }, [])
 
-  /*return (
-    <div>
-      <p>Hi</p>
-    </div>
-  );
+/*return (
+  <div>
+    <p>Hi</p>
+  </div>
+);
 };
 */

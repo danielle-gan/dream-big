@@ -10,7 +10,7 @@ import {
   Card,
   CardColumns,
 } from "react-bootstrap";
-import logo from '../assets/schedule.png'
+import logo from "../assets/schedule.png";
 
 import Navigation from "../components/Navigation";
 
@@ -37,31 +37,31 @@ const Home = () => {
   return (
     // [data]
     <>
-      < div className="home-box">
-        <img className = "home-img" alt="schedule logo" src={logo} />
+      <div className="home-box">
+        <img className="home-img" alt="schedule logo" src={logo} />
         <p>Log in or Sign Up to view your schedule!</p>
-      </div >
+      </div>
     </>
-  )
-}
+  );
+};
 export default Home;
 
-  // useState
-  // const [data, setData] = useState();
+// useState
+// const [data, setData] = useState();
 
-  // useEffect( () => {
-  //     // async function apiCall() {
-  //     //     const response = await fetch("<url>");
-  //     //     const result = await response.json();
+// useEffect( () => {
+//     // async function apiCall() {
+//     //     const response = await fetch("<url>");
+//     //     const result = await response.json();
 
-  //     //     // using useState - set the state with the data you want.
-  //     //     // setData();
-  //     // }
+//     //     // using useState - set the state with the data you want.
+//     //     // setData();
+//     // }
 
-  //     // apiCall()
-  //    console.log(upcomingHolidays());
+//     // apiCall()
+//    console.log(upcomingHolidays());
 
-  // }, [])
+// }, [])
 
 /*return (
   <div>

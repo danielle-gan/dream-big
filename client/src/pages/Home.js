@@ -10,6 +10,7 @@ import {
   Card,
   CardColumns,
 } from "react-bootstrap";
+import logo from '../assets/schedule.png'
 
 import Navigation from "../components/Navigation";
 
@@ -35,7 +36,12 @@ const Home = () => {
 
   return (
     // [data]
-    < div > HI </div >
+    <>
+      < div className="home-box">
+        <img className = "home-img" alt="schedule logo" src={logo} />
+        <p>Log in or Sign Up to view your schedule!</p>
+      </div >
+    </>
   )
 }
 export default Home;

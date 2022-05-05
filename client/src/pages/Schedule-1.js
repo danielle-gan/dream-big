@@ -37,7 +37,7 @@ const Schedule = () => {
         <Modal.Body>
           <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email address of Additional Colleagues</Form.Label>
+              <Form.Label>Email Additional Colleagues</Form.Label>
               <Form.Control
                 type="email"
                 placeholder="name@example.com"

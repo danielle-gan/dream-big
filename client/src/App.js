@@ -13,6 +13,12 @@ import Schedule from './pages/Schedule-1';
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 
+import '@progress/kendo-theme-default/dist/all.css';  
+import "./App.css";  
+function App() {  
+  return <div className="App"></div>;  
+}  
+
 const httpLink = createHttpLink({
   uri: "/graphql",
 });

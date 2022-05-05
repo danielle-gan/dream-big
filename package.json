@@ -1,21 +1,52 @@
 {
-    "name": "admin-scheduler",
-    "version": "1.0.0",
-    "description": "",
-    "main": "server/server.js",
-    "scripts": {
-        "start": "node server/server.js",
-        "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-        "install": "cd server && npm i && cd ../client && npm i",
-        "build": "cd client && npm run build"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "concurrently": "^5.1.0"
-    },
-    "dependencies": {
-        "holidayapi": "^6.0.1"
-    }
+  "name": "admin-scheduler",
+  "version": "1.0.0",
+  "description": "## Table of Contents",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "@devexpress/dx-react-core": "^3.0.2",
+    "@devexpress/dx-react-scheduler": "^3.0.2",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.6.4",
+    "@mui/styled-engine-sc": "^5.6.1",
+    "@progress/kendo-date-math": "^1.5.6",
+    "@progress/kendo-drawing": "^1.16.3",
+    "@progress/kendo-licensing": "^1.2.2",
+    "@progress/kendo-react-animation": "^5.2.0",
+    "@progress/kendo-react-buttons": "^5.2.0",
+    "@progress/kendo-react-common": "^5.2.0",
+    "@progress/kendo-react-dateinputs": "^5.2.0",
+    "@progress/kendo-react-dialogs": "^5.2.0",
+    "@progress/kendo-react-dropdowns": "^5.2.0",
+    "@progress/kendo-react-form": "^5.2.0",
+    "@progress/kendo-react-inputs": "^5.2.0",
+    "@progress/kendo-react-intl": "^5.2.0",
+    "@progress/kendo-react-popup": "^5.2.0",
+    "@progress/kendo-react-scheduler": "^5.2.0",
+    "@progress/kendo-react-treeview": "^5.2.0",
+    "@progress/kendo-theme-default": "^5.4.1",
+    "holidayapi": "^6.0.1",
+    "styled-components": "^5.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielle-gan/dream-big.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielle-gan/dream-big/issues"
+  },
+  "homepage": "https://github.com/danielle-gan/dream-big#readme"
 }

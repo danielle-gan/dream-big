@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Form, Button, Alert } from "react-bootstrap";
-import Auth from "../utils/auth";
 import { useMutation } from "@apollo/client";
 import { ADD_USER } from "../utils/mutations";
+import Auth from "../utils/auth";
 
 const SignupForm = () => {
   const [userAdd] = useMutation(ADD_USER);
@@ -64,7 +64,7 @@ const SignupForm = () => {
         </Alert>
 
         <Form.Group>
-          <Form.Label htmlFor="username">Username</Form.Label>
+          <Form.Label htmlFor="username">USERNAME</Form.Label>
           <Form.Control
             type="text"
             placeholder="Your username"
@@ -74,12 +74,12 @@ const SignupForm = () => {
             required
           />
           <Form.Control.Feedback type="invalid">
-            Username is required!
+            (Required)
           </Form.Control.Feedback>
         </Form.Group>
 
         <Form.Group>
-          <Form.Label htmlFor="email">Email</Form.Label>
+          <Form.Label htmlFor="email">EMAIL</Form.Label>
           <Form.Control
             type="email"
             placeholder="Your email address"
@@ -89,12 +89,12 @@ const SignupForm = () => {
             required
           />
           <Form.Control.Feedback type="invalid">
-            Email is required!
+            (Required)
           </Form.Control.Feedback>
         </Form.Group>
 
         <Form.Group>
-          <Form.Label htmlFor="password">Password</Form.Label>
+          <Form.Label htmlFor="password">PASSWORD</Form.Label>
           <Form.Control
             type="password"
             placeholder="Your password"
@@ -104,7 +104,7 @@ const SignupForm = () => {
             required
           />
           <Form.Control.Feedback type="invalid">
-            Password is required!
+            (Required)
           </Form.Control.Feedback>
         </Form.Group>
         <Button

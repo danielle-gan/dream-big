@@ -5,15 +5,14 @@
 - [Description](#description)
 - [Features](#features)
 - [User-Story](#user-story)
-- [Usage](#usage)
 - [Webpage-Screenshots](#webpage-screenshots)
 - [Github-Link](#github-link)
-- [Deployed-Link](#deployed-link)
-- [Contributor](#contributor)
+- [Future-Development](#future-development)
+- [Contributors](#contributors)
 
 ### Description
 
-This application allows teachers to sign up and create an account, manage/schedule their workday, post their school/student related needs on a message board, and interact with fellow teachers in real time.
+This application allows teachers to sign up and create an account to manage/schedule their workday.
 
 ### Features
 
@@ -26,18 +25,31 @@ This application includes the following features:
 ### User Story
 
 AS A teacher
-I WANT to effectively manage my workday utilizing daily schedulers and peer message boards
-SO THAT I remain organized and abreast of any school/student related updates in real time
-
-### Usage
+I WANT to effectively manage my workday utilizing daily schedulers
+SO THAT I remain organized and abreast of any school/student related tasks in real time
 
 ### Webpage Screenshots
 
-### GitHub Link
+Image of the Dream Big homepage:
+![Screenshot](<assets/images/Screenshot%20(45).png>)
 
-https://github.com/jlcunningham2101/dream-small
+Image of the Dream Big login and signup page:
+![Screenshot](<assets/images/Screenshot%20(46).png>)
 
-### Heroku Link
+### GitHub Links
+
+https://github.com/danielle-gan/dream-big.git
+https://github.com/danielle-gan/dream-big
+
+### Future Development
+
+Below are several future areas of interest to expand the application's scope:
+
+- Message board for teachers to post and comment on content
+- Live chat feature for teachers to talk about student or school concerns in real time
+- Calendar that displays upcoming observed holidays
+- Friend request functionality (ie. Add a Teacher, Add a Student')
+- Login credentials for teachers and students that renders different levels of webpage access
 
 ### Contributors
 

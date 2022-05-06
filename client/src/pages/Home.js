@@ -39,7 +39,6 @@ const Home = () => {
     <>
       <div className="home-box">
         <img className="home-img" alt="schedule logo" src={logo} />
-        <p>Log in or Sign Up to view your schedule!</p>
       </div>
     </>
   );

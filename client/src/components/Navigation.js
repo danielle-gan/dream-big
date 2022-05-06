@@ -14,7 +14,7 @@ const Navigation = () => {
         <Navbar expand="lg">
           <Container fluid>
             <Navbar.Brand as={Link} to="/">
-              Admin Scheduler
+              WELCOME TO YOUR PERSONAL TASK MASTER!{" "}
             </Navbar.Brand>
             {/* <Navbar.Toggle aria-controls="navbar" /> */}
             <Navbar.Collapse id="navbar">
@@ -22,7 +22,7 @@ const Navigation = () => {
                 {Auth.loggedIn() ? (
                   <>
                     <Nav.Link as={Link} to="/profile">
-                      My Schedule
+                      My Tasks List
                     </Nav.Link>
                     <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
                   </>

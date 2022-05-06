@@ -17,7 +17,7 @@ import {
 const Schedule = () => {
   return (
     <div>
-      <p>Hello</p>
+      <p>Welcome!</p>
     </div>
   );
 };
